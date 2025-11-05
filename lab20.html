@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Function Example</title>
+<script>
+  function square(n) {
+    return n * n;
+  }
+  function showResult() {
+    let num = document.getElementById("num").value;
+    document.getElementById("output").innerText =
+      "Square of " + num + " is " + square(num);
+  }
+</script>
+</head>
+<body>
+  <h1>Function Example</h1>
+  <input type="number" id="num" placeholder="Enter a number">
+  <button onclick="showResult()">Find Square</button>
+  <p id="output"></p>
+</body>
+</html>

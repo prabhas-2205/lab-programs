@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Arrays and Objects in JS</title>
+<script>
+function showData() {
+  let fruits = ["Apple", "Banana", "Cherry"];
+  let person = { name: "Siva", age: 21, city: "Rajahmundry" };
+
+  let text = `<h3>Array:</h3><ul>`;
+  fruits.forEach(f => text += `<li>${f}</li>`);
+  text += `</ul><h3>Object:</h3>`;
+  for (let key in person) {
+    text += `${key}: ${person[key]}<br>`;
+  }
+  document.getElementById("result").innerHTML = text;
+}
+</script>
+</head>
+<body onload="showData()">
+  <h1>Arrays and Objects</h1>
+  <div id="result"></div>
+</body>
+</html>
