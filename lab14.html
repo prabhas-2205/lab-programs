@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Box Model Example</title>
+<style>
+  .box {
+    width: 300px;
+    border: 5px solid blue;
+    margin: 30px auto;
+    padding: 20px;
+    outline: 3px dashed red;
+    box-shadow: 10px 10px 15px gray;
+    background-color: lightyellow;
+    overflow: auto;
+  }
+</style>
+</head>
+<body>
+  <h1 align="center">CSS Box Model Properties</h1>
+  <div class="box">
+    <p>
+      This div demonstrates <b>border</b>, <b>margin</b>, <b>padding</b>,
+      <b>outline</b>, <b>box-shadow</b>, and <b>overflow</b>.
+      Scroll to see how overflow behaves with extra text.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      dignissim nisi at massa sollicitudin, vitae sodales metus ultricies.
+      Donec ac erat ac diam viverra sagittis. Vivamus nec eros euismod,
+      facilisis purus sed, consequat enim.
+    </p>
+  </div>
+</body>
+</html>

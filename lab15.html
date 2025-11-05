@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Data Types</title>
+<script>
+  function showTypes() {
+    let str = "Hello World";
+    let num = 42;
+    let bool = true;
+    let arr = [1, 2, 3];
+    let obj = { name: "Siva", age: 20 };
+    let n = null;
+    let u;
+
+    document.getElementById("output").innerHTML = `
+      <ul>
+        <li>String: ${str}</li>
+        <li>Number: ${num}</li>
+        <li>Boolean: ${bool}</li>
+        <li>Array: ${arr}</li>
+        <li>Object: ${JSON.stringify(obj)}</li>
+        <li>Null: ${n}</li>
+        <li>Undefined: ${u}</li>
+      </ul>`;
+  }
+</script>
+</head>
+<body onload="showTypes()">
+  <h1>JavaScript Data Types</h1>
+  <div id="output"></div>
+</body>
+</html>

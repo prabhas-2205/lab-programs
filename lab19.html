@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JS Conditions and Loops</title>
+</head>
+<body>
+<h1>Conditional Statements and Loops</h1>
+<pre id="output"></pre>
+
+<script>
+let marks = 75;
+let grade;
+if (marks >= 90) grade = "A+";
+else if (marks >= 75) grade = "A";
+else if (marks >= 60) grade = "B";
+else grade = "C";
+
+let text = `Marks: ${marks}, Grade: ${grade}\n\nLoop Output:\n`;
+for (let i = 1; i <= 5; i++) {
+  text += `Iteration ${i}\n`;
+}
+document.getElementById("output").textContent = text;
+</script>
+</body>
+</html>
