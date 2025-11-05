@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-# Sample data
+# Sample dictionary data and labels
 exam_data = {
     'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael',
              'Matthew', 'Laura', 'Kevin', 'Jonas'],
@@ -12,10 +12,16 @@ exam_data = {
 
 labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
-# Create DataFrame
+# Create the DataFrame
 df = pd.DataFrame(exam_data, index=labels)
 
-# Get list of column headers
-column_list = list(df.columns)
+# Display original DataFrame
+print("Original DataFrame:")
+print(df)
 
-print("List of column headers:", column_list)
+# Insert a new column 'age' into the DataFrame
+df['age'] = [14, 15, 16, 14, 15, 16, 17, 15, 14, 16]
+
+# Display updated DataFrame
+print("\nDataFrame after adding new column 'age':")
+print(df)

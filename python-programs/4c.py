@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-# Sample data
+# Sample dictionary data and labels
 exam_data = {
     'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael',
              'Matthew', 'Laura', 'Kevin', 'Jonas'],
@@ -15,7 +15,13 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 # Create DataFrame
 df = pd.DataFrame(exam_data, index=labels)
 
-# Get list of column headers
-column_list = list(df.columns)
+# Display original DataFrame
+print("Original DataFrame:")
+print(df)
 
-print("List of column headers:", column_list)
+# Change 'James' to 'Suresh' in the 'name' column
+df.loc[df['name'] == 'James', 'name'] = 'Suresh'
+
+# Display updated DataFrame
+print("\nDataFrame after changing 'James' to 'Suresh':")
+print(df)
